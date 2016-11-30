@@ -1,0 +1,12 @@
+<template name="app">
+ <h1><a href="/another">Go to other pager</a></h1>
+
+	{{#each infinite in infinites}}
+ <p>
+   {{infinite.name}}
+ </p>
+
+
+ {{/each}}
+{{> infiniteScroll }}
+</template>
