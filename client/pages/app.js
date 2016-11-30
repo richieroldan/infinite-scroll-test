@@ -23,3 +23,12 @@ Template.app.helpers({
   },
 });
 
+Template.app.events({
+  'click #addData' : function(e,i){
+
+    Meteor.call("addData",function(e,res){
+      location.href = '/'
+    })
+  }
+})
+
